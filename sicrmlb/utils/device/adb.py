@@ -1,6 +1,7 @@
 import os
 import pathlib
 import re
+import base64
 from typing import IO
 import subprocess as sp
 
@@ -17,10 +18,22 @@ class AndroidDebugBridge:
             self._process.terminate()
 
     def start_screenrecord(self, device_id: str | None = None) -> sp.Popen:
+        """Start the adb screenrecord process for the specified device."""
+        device_metrics = self._get_device_metrics(device_id)
         args: list[str] = []
         if device_id:
             args += ["-s", device_id]
-        args += ["shell", "screenrecord", "--output-format=h264", "-"]
+        cmd = (
+            f"""#!/bin/bash
+            while true; do
+                screenrecord --output-format=h264 --time-limit "179" """
+            f"""--size "{device_metrics.width}x{device_metrics.height}" --bit-rate "5M" -
+            done\n"""
+        )
+        cmd = base64.b64encode(cmd.encode("utf-8")).decode("utf-8")
+        cmd = ["echo", cmd, "|", "base64", "-d", "|", "sh"]
+        cmd = " ".join(cmd) + "\n"
+        args += ["shell", cmd]
         return self._open_process(args)
 
     def _run_command(self, args: list[str]) -> sp.CompletedProcess:

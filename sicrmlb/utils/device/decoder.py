@@ -16,6 +16,7 @@ class Decoder:
         self._frame = None
     
     def get_current_frame(self) -> av.VideoFrame | None:
+        """Get the current video frame from the decoder."""
         if self._frame is None:
             self._start_updating_frame()
             
