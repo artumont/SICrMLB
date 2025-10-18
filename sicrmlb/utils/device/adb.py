@@ -12,6 +12,8 @@ class AndroidDebugBridge:
     def __init__(self):
         self._process = None
         self.binary = self._get_adb_path()
+        
+        self._ensure_daemon_running()
 
     def __del__(self):
         if self._process is not None:
@@ -59,6 +61,10 @@ class AndroidDebugBridge:
         self._process = sp.Popen(cmd, stdout=sp.PIPE)
         return self._process
 
+    def _ensure_daemon_running(self) -> None:
+        """Ensure that the adb daemon is running."""
+        self._run_command(["start-server"])
+    
     def _get_device_metrics(self, device_id: str | None = None) -> DeviceMetrics:
         cmd = [str(self.binary)]
         if device_id:

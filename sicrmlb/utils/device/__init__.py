@@ -1,4 +1,4 @@
-from PIL import Image
+from PIL.Image import Image
 
 from sicrmlb.utils.device import _constants
 from sicrmlb.utils.device.adb import AndroidDebugBridge
@@ -33,7 +33,7 @@ class Device:
         if hasattr(self, "decoder"):
             self.decoder.frame_thread.join(timeout=1)
 
-    def get_frame(self) -> Image.Image:
+    def get_frame(self) -> Image:
         """Get the current frame from the Android device as a PIL Image."""
         frame = self.decoder.get_current_frame()
         if frame is None:
