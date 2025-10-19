@@ -38,6 +38,7 @@ class ElixirDetector(BaseDetector):
             point_x += self.initial_x_offset if i == 0 else 0
             point_y = (ELIXIR_UNIT_HEIGHT // 2) + self.analysis_y_offset
             offset += ELIXIR_UNIT_WIDTH
+            logger.debug(f"Elixir point {i}: ({point_x}, {point_y})")
             elixir_points.append((point_x, point_y))
         elixir_points.reverse()  # Go from highest to lowest
 
@@ -48,9 +49,14 @@ class ElixirDetector(BaseDetector):
                 continue
             pixel = RGBColor.pixel_to_color(raw_pixel)
             if not self._is_color_in_range(pixel, self.elixir_color_range):
+                logger.debug(
+                    f"Pixel at {point} with color {pixel} is out of elixir range."
+                )
                 elixir_amount -= 1
             else:
                 break  # Found elixir, stop checking further
+
+        logger.debug(f"Detected elixir amount: {elixir_amount}")
 
         return ElixirState(
             elixir_amount=elixir_amount,
@@ -61,11 +67,11 @@ class ElixirDetector(BaseDetector):
     @staticmethod
     def _ensure_cropped(frame: Image) -> Image:
         if frame.height != CROPPED_ELIXIR_HEIGHT or frame.width != CROPPED_ELIXIR_WIDTH:
-            logger.warning(
+            logger.debug(
                 f"Expected frame size of {CROPPED_ELIXIR_WIDTH}x{CROPPED_ELIXIR_HEIGHT}, "
                 f"but got {frame.width}x{frame.height}."
             )
-            logger.info("Cropping frame to elixir bar dimensions.")
+            logger.debug("Cropping frame to elixir bar dimensions.")
 
             if frame.width != CAPTURE_WIDTH or frame.height != CAPTURE_HEIGHT:
                 logger.error("Frame size does not match capture dimensions.")
@@ -79,7 +85,7 @@ class ElixirDetector(BaseDetector):
                     ELIXIR_START_Y + CROPPED_ELIXIR_HEIGHT,
                 )
             )
-            logger.info("Frame cropped to elixir bar dimensions.")
+            logger.debug("Frame cropped to elixir bar dimensions.")
 
         return frame
 
@@ -87,7 +93,7 @@ class ElixirDetector(BaseDetector):
     def _ensure_tuple_pixel(pixel: Any) -> tuple[int, int, int] | None:
         if isinstance(pixel, tuple) and len(pixel) == 3:
             return pixel
-        raise ValueError("Pixel is not a valid RGB tuple.")
+        return None
 
     @staticmethod
     def _is_color_in_range(pixel: RGBColor, color_range: RGBRange) -> bool:
