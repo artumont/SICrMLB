@@ -58,7 +58,8 @@ class TroopType(Enum):
 
     GROUND = "ground"
     AIR = "air"
-    
+
+
 class TroopSpawnType(Enum):
     """Enumeration of troop spawn types."""
 
@@ -107,16 +108,16 @@ class Troop(Unit):
     attack_range: float  # in cr tiles
     attack_splash_radius: float | None = None  # in cr tiles
     movement_speed: TroopSpeed | float  # in cr tiles per second
-    targetting: List[UnitTargetting] # list needed for troops like minion horde
-    
+    targetting: List[UnitTargetting]  # list needed for troops like minion horde
+
     # For troops with special effects (e.g. ice spirit, ice wiz, etc.)
     effect: Effect | None = None
     effect_repeats: int | None = None  # e.g. evo ice spirit
     effect_on: EffectOn | None = None
     effect_time: float | None = None  # duration of the effect (if applicable)
-    
-    troop_spawn_type: TroopSpawnType # for witch and skarmy type troops
-    
+
+    troop_spawn_type: TroopSpawnType  # for witch and skarmy type troops
+
     # For troops that spawn other troops
     sub_troops: List["Troop"] | None = None  # for spawner type troops
     spawn_amount: int | None = None  # for spawner type troops
@@ -133,4 +134,3 @@ class Building(Unit):
     attack_speed: float | None = None  # in seconds
     attack_range: float | None = None  # in cr tiles
     targetting: List[UnitTargetting] | None = None
-
