@@ -1,3 +1,5 @@
+from pathlib import Path
+
 NUM_CARDS_ON_HAND = 4
 
 CARD_WIDTH = 72
@@ -8,3 +10,5 @@ DECK_START_Y = 535
 
 CROPPED_DECK_WIDTH = CARD_WIDTH * NUM_CARDS_ON_HAND
 CROPPED_DECK_HEIGHT = CARD_HEIGHT
+
+CARD_CLASSIFICATION_MODEL = Path(__file__).parent / "models" / "cr-card-classification.pt"
