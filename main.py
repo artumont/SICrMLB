@@ -29,13 +29,13 @@ if __name__ == "__main__":
         # )
         
         # elixir
-        # cv2.rectangle(
-        #     frame,
-        #     (int(72), int(625)),
-        #     (int(72 + 28.8 * 10), int(625 + 20)),
-        #     color=(0, 255, 255),
-        #     thickness=2,
-        # )
+        cv2.rectangle(
+            frame,
+            (int(72), int(625)),
+            (int(72 + 28.8 * 10), int(625 + 20)),
+            color=(0, 255, 255),
+            thickness=2,
+        )
         
         elixir_detector = ElixirDetector()
         elixir_state = elixir_detector.perform_analysis(raw)
@@ -62,7 +62,7 @@ if __name__ == "__main__":
         
         cv2.imshow("Android Screen", frame)
         if cv2.waitKey(1) & 0xFF == ord("q"):
-            # raw.save("testing_frame.png")
+            raw.save("testing_frame.png")
             break
 
     device.stop_capture()

@@ -41,43 +41,9 @@ class Device:
         frame = self.decoder.get_current_frame()
         if frame is None:
             raise RuntimeError("No frame available from decoder.")
-
-        target_w = _constants.CAPTURE_WIDTH
-        target_h = _constants.CAPTURE_HEIGHT
-
-        if getattr(frame, "width", 0) >= target_w and getattr(frame, "height", 0) >= target_h:
-            try:
-                src_w = frame.width
-                src_h = frame.height
-                target_aspect = target_w / target_h
-                src_aspect = src_w / src_h
-
-                if src_aspect > target_aspect:
-                    # source is wider -> crop width
-                    crop_h = src_h
-                    crop_w = int(target_aspect * crop_h)
-                else:
-                    # source is taller or equal -> crop height
-                    crop_w = src_w
-                    crop_h = int(crop_w / target_aspect)
-
-                crop_x = (src_w - crop_w) // 2
-                crop_y = (src_h - crop_h) // 2
-                box = (crop_x, crop_y, crop_x + crop_w, crop_y + crop_h)
-
-                pil = frame.to_image()
-                center = pil.crop(box)
-                if center.mode != "RGB":
-                    center = center.convert("RGB")
-                resized = center.resize((target_w, target_h), resample=PILImage.Resampling.LANCZOS)
-                return resized
-            except Exception:
-                logger.warning("Failed to crop and resize frame, falling back to direct reformat.", exc_info=True)
-                pass
-
         img = frame.reformat(
-            width=target_w,
-            height=target_h,
+            width=_constants.CAPTURE_WIDTH,
+            height=_constants.CAPTURE_HEIGHT,
             format="rgb24",
         ).to_image()
         return img
