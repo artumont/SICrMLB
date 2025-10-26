@@ -62,7 +62,7 @@ if __name__ == "__main__":
         
         cv2.imshow("Android Screen", frame)
         if cv2.waitKey(1) & 0xFF == ord("q"):
-            raw.save("testing_frame.png")  # Save a frame for debugging purposes
+            # raw.save("testing_frame.png")
             break
 
     device.stop_capture()
