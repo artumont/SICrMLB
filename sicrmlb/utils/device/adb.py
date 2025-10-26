@@ -2,6 +2,7 @@ import os
 import pathlib
 import re
 import base64
+import shutil
 from typing import IO
 import subprocess as sp
 
@@ -86,6 +87,9 @@ class AndroidDebugBridge:
 
     @staticmethod
     def _get_adb_path() -> pathlib.Path | None:
+        if adb_path := shutil.which("adb"):
+            return pathlib.Path(adb_path)
+        
         candidates = [
             pathlib.Path(os.getcwd(), "bin", "adb.exe"),
             pathlib.Path(os.getcwd(), "bin", "adb"),
