@@ -1,0 +1,3282 @@
+zap:
+  name: zap
+  type: spells
+  arena: 5
+  level_multiplier: 1.1
+  base_stats:
+    damage: 192
+    tower_damage: 58
+    spell_radius: 2.5
+  meta_data:
+    roles: []
+    properties:
+    - spell
+    - low_damage_spell
+    - air_attacking_splash
+    - ground_attacking_splash
+    - has_reset_attack
+    - anti_air_spell
+    - low_elixir_cycle_card
+    - resets_charge_attack
+  url: https://www.deckshop.pro/card/detail/zap
+rocket:
+  name: rocket
+  type: spells
+  arena: 5
+  level_multiplier: 1.1
+  base_stats:
+    damage: 1484
+    tower_damage: 371
+    spell_radius: 2
+  meta_data:
+    roles:
+    - pump_response
+    - level_independent
+    properties:
+    - spell
+    - high_damage_spell
+    - air_attacking_splash
+    - ground_attacking_splash
+    - knockback_effect
+    - anti_air_spell
+  url: https://www.deckshop.pro/card/detail/rocket
+mirror:
+  name: mirror
+  type: spells
+  arena: 15
+  level_multiplier: 1.1
+  base_stats: {}
+  meta_data:
+    roles: []
+    properties:
+    - spell
+  url: https://www.deckshop.pro/card/detail/mirror
+barbbarrel:
+  name: barbarian_barrel
+  type: melee
+  arena: 9
+  level_multiplier: 1.1
+  base_stats:
+    damage: 230
+    range: 4.5
+  meta_data:
+    roles: []
+    properties:
+    - spell
+    - low_damage_spell
+    - ground_attacking_splash
+    - ground_troop
+    - melee:_short
+    - low_elixir_cycle_card
+  url: https://www.deckshop.pro/card/detail/barbarian-barrel
+royaldelivery:
+  name: royal_delivery
+  type: melee
+  arena: 14
+  level_multiplier: 1.1
+  base_stats:
+    damage: 437
+    spell_radius: 3
+  meta_data:
+    roles:
+    - level_independent
+    properties:
+    - spell
+    - low_damage_spell
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - anti_air_spell
+    - melee:_long
+  url: https://www.deckshop.pro/card/detail/royal-delivery
+goblincurse:
+  name: goblin_curse
+  type: spells
+  arena: 14
+  level_multiplier: 1.1
+  base_stats:
+    damage: 210
+    tower_damage: 42
+    spell_radius: 3
+    duration: 6
+  meta_data:
+    roles:
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - spell
+    - low_damage_spell
+    - anti_air_spell
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - barbarian_barrel_bait
+  url: https://www.deckshop.pro/card/detail/goblin-curse
+fireball:
+  name: fireball
+  type: spells
+  arena: 0
+  level_multiplier: 1.1
+  base_stats:
+    damage: 688
+    tower_damage: 207
+    spell_radius: 2.5
+  meta_data:
+    roles:
+    - pump_response
+    - strong_when_overleveled
+    - weak_when_underleveled
+    properties:
+    - spell
+    - air_attacking_splash
+    - ground_attacking_splash
+    - knockback_effect
+    - anti_air_spell
+    - medium_damage_spell
+  url: https://www.deckshop.pro/card/detail/fireball
+arrows:
+  name: arrows
+  type: spells
+  arena: 0
+  level_multiplier: 1.1
+  base_stats:
+    damage: 366
+    tower_damage: 93
+    spell_radius: 3.5
+  meta_data:
+    roles:
+    - level_independent
+    properties:
+    - spell
+    - low_damage_spell
+    - air_attacking_splash
+    - ground_attacking_splash
+    - anti_air_spell
+  url: https://www.deckshop.pro/card/detail/arrows
+snowball:
+  name: giant_snowball
+  type: spells
+  arena: 8
+  level_multiplier: 1.1
+  base_stats:
+    damage: 179
+    tower_damage: 54
+    spell_radius: 2.5
+  meta_data:
+    roles: []
+    properties:
+    - spell
+    - low_damage_spell
+    - air_attacking_splash
+    - ground_attacking_splash
+    - knockback_effect
+    - anti_air_spell
+    - low_elixir_cycle_card
+  url: https://www.deckshop.pro/card/detail/giant-snowball
+earthquake:
+  name: earthquake
+  type: spells
+  arena: 12
+  level_multiplier: 1.1
+  base_stats:
+    damage: 243
+    tower_damage: 159
+    building_damage: 849
+    spell_radius: 3.5
+    duration: 3
+  meta_data:
+    roles:
+    - pump_response
+    properties:
+    - spell
+    - low_damage_spell
+    - ground_attacking_splash
+    - medium_damage_spell
+  url: https://www.deckshop.pro/card/detail/earthquake
+rage:
+  name: rage
+  type: spells
+  arena: 14
+  level_multiplier: 1.1
+  base_stats:
+    damage: 179
+    tower_damage: 54
+    spell_radius: 3
+    duration: 4.5
+  meta_data:
+    roles:
+    - level_independent
+    properties:
+    - spell
+    - low_damage_spell
+    - anti_air_spell
+  url: https://www.deckshop.pro/card/detail/rage
+barrel:
+  name: goblin_barrel
+  type: melee
+  arena: 6
+  level_multiplier: 1.1
+  base_stats:
+    spell_radius: 1.5
+  meta_data:
+    roles:
+    - win_condition
+    - punishment_for_spending_elixir
+    - pump_response
+    - strong_when_overleveled
+    - weak_when_underleveled
+    - threat_on_attack
+    properties:
+    - spell
+    - ground_troop
+    - melee:_short
+    - can_activate_king
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - snowball_bait
+    - tornado_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/goblin-barrel
+vines:
+  name: vines
+  type: spells
+  arena: 8
+  level_multiplier: 1.1
+  base_stats:
+    damage: 306
+    tower_damage: 56
+    spell_radius: 2.5
+    duration: 2
+  meta_data:
+    roles:
+    - pump_response
+    - level_independent
+    - weak_when_underleveled
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - spell
+    - has_reset_attack
+    - anti_air_spell
+    - medium_damage_spell
+    - resets_charge_attack
+  url: https://www.deckshop.pro/card/detail/vines
+clone:
+  name: clone
+  type: spells
+  arena: 15
+  level_multiplier: 1.1
+  base_stats:
+    spell_radius: 3
+  meta_data:
+    roles:
+    - level_independent
+    - threat_on_attack
+    properties:
+    - spell
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/clone
+freeze:
+  name: freeze
+  type: spells
+  arena: 8
+  level_multiplier: 1.1
+  base_stats:
+    damage: 148
+    tower_damage: 45
+    spell_radius: 3
+  meta_data:
+    roles:
+    - level_independent
+    properties:
+    - spell
+    - low_damage_spell
+    - air_attacking_splash
+    - ground_attacking_splash
+    - has_reset_attack
+    - anti_air_spell
+    - resets_charge_attack
+  url: https://www.deckshop.pro/card/detail/freeze
+tornado:
+  name: tornado
+  type: spells
+  arena: 15
+  level_multiplier: 1.1
+  base_stats:
+    damage: 84
+    tower_damage: 27
+    spell_radius: 5.5
+    duration: 1.1
+  meta_data:
+    roles:
+    - level_independent
+    properties:
+    - spell
+    - low_damage_spell
+    - air_attacking_splash
+    - ground_attacking_splash
+    - knockback_effect
+    - anti_air_spell
+  url: https://www.deckshop.pro/card/detail/tornado
+void:
+  name: void
+  type: spells
+  arena: 15
+  level_multiplier: 1.1
+  base_stats:
+    damage: 1020
+    tower_damage: 153
+    spell_radius: 2.5
+    duration: 4
+  meta_data:
+    roles:
+    - pump_response
+    - threat_on_defense
+    properties:
+    - spell
+    - high_damage_spell
+    - anti_air_spell
+  url: https://www.deckshop.pro/card/detail/void
+lightning:
+  name: lightning
+  type: spells
+  arena: 8
+  level_multiplier: 1.1
+  base_stats:
+    damage: 1057
+    tower_damage: 286
+    spell_radius: 3.5
+  meta_data:
+    roles:
+    - pump_response
+    properties:
+    - spell
+    - high_damage_spell
+    - has_reset_attack
+    - anti_air_spell
+    - resets_charge_attack
+  url: https://www.deckshop.pro/card/detail/lightning
+poison:
+  name: poison
+  type: spells
+  arena: 9
+  level_multiplier: 1.1
+  base_stats:
+    damage: 736
+    tower_damage: 184
+    spell_radius: 3.5
+    duration: 8
+  meta_data:
+    roles:
+    - pump_response
+    - level_independent
+    properties:
+    - spell
+    - air_attacking_splash
+    - ground_attacking_splash
+    - anti_air_spell
+    - medium_damage_spell
+  url: https://www.deckshop.pro/card/detail/poison
+graveyard:
+  name: graveyard
+  type: melee
+  arena: 12
+  level_multiplier: 1.1
+  base_stats:
+    spell_radius: 4
+    duration: 9
+  meta_data:
+    roles:
+    - win_condition
+    - punishment_for_spending_elixir
+    - pump_response
+    - strong_when_overleveled
+    - threat_on_attack
+    properties:
+    - spell
+    - swarm_troop
+    - melee:_short
+    - can_activate_king
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/graveyard
+cannon:
+  name: cannon
+  type: melee
+  arena: 3
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 824
+    damage: 212
+    hit_speed: 1
+    range: 5.5
+  meta_data:
+    roles:
+    - threat_on_defense
+    properties:
+    - building
+    - defensive_tower
+    - ranged_attacker_troop
+    - ground_tank_killer
+    - zap_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - snowball_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - defensive_building
+  url: https://www.deckshop.pro/card/detail/cannon
+log:
+  name: the_log
+  type: spells
+  arena: 11
+  level_multiplier: 1.1
+  base_stats:
+    damage: 268
+    tower_damage: 41
+    range: 10.1
+  meta_data:
+    roles: []
+    properties:
+    - spell
+    - low_damage_spell
+    - ground_attacking_splash
+    - knockback_effect
+    - low_elixir_cycle_card
+    - resets_charge_attack
+  url: https://www.deckshop.pro/card/detail/the-log
+tesla:
+  name: tesla
+  type: spells
+  arena: 10
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1152
+    damage: 220
+    hit_speed: 1.1
+    range: 5.5
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_defense
+    properties:
+    - building
+    - defensive_tower
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - fireball_bait
+    - lightning_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - defensive_building
+  url: https://www.deckshop.pro/card/detail/tesla
+mortar:
+  name: mortar
+  type: spells
+  arena: 5
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1369
+    damage: 266
+    hit_speed: 5
+    range: 11.5
+  meta_data:
+    roles:
+    - win_condition
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - building
+    - ground_attacking_splash
+    - siege_tower
+    - zap_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - defensive_building
+  url: https://www.deckshop.pro/card/detail/mortar
+tombstone:
+  name: tombstone
+  type: spells
+  arena: 2
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 529
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_defense
+    properties:
+    - building
+    - spawner_building
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - snowball_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - defensive_building
+  url: https://www.deckshop.pro/card/detail/tombstone
+gobhut:
+  name: goblin_hut
+  type: melee
+  arena: 1
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1180
+    range: 6
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_defense
+    properties:
+    - building
+    - ranged_attacker_troop
+    - spawner_building
+    - anti_air_troop
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+    - defensive_building
+  url: https://www.deckshop.pro/card/detail/goblin-hut
+bombtower:
+  name: bomb_tower
+  type: spells
+  arena: 4
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1356
+    damage: 222
+    hit_speed: 1.8
+    range: 6
+  meta_data:
+    roles:
+    - threat_on_defense
+    properties:
+    - building
+    - defensive_tower
+    - ground_attacking_splash
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - defensive_building
+  url: https://www.deckshop.pro/card/detail/bomb-tower
+goblincage:
+  name: goblin_cage
+  type: melee
+  arena: 1
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 780
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_defense
+    properties:
+    - building
+    - mini_tank
+    - ground_troop
+    - melee:_short
+    - ground_tank_killer
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+    - defensive_building
+  url: https://www.deckshop.pro/card/detail/goblin-cage
+inferno:
+  name: inferno_tower
+  type: spells
+  arena: 4
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1748
+    damage: 43
+    hit_speed: 0.4
+    range: 6
+  meta_data:
+    roles:
+    - level_independent
+    - threat_on_defense
+    properties:
+    - building
+    - defensive_tower
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - zap_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - defensive_building
+  url: https://www.deckshop.pro/card/detail/inferno-tower
+pump:
+  name: elixir_collector
+  type: spells
+  arena: 15
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1070
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - pump_response
+    - level_independent
+    properties:
+    - building
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - earthquake_bait
+  url: https://www.deckshop.pro/card/detail/elixir-collector
+goblindrill:
+  name: goblin_drill
+  type: spells
+  arena: 14
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1313
+    damage: 84
+  meta_data:
+    roles:
+    - win_condition
+    - punishment_for_spending_elixir
+    - pump_response
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - building
+    - spawner_building
+    - ground_tank_killer
+    - can_activate_king
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+    - defensive_building
+  url: https://www.deckshop.pro/card/detail/goblin-drill
+barbhut:
+  name: barbarian_hut
+  type: spells
+  arena: 9
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1164
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_defense
+    properties:
+    - building
+    - spawner_building
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - defensive_building
+  url: https://www.deckshop.pro/card/detail/barbarian-hut
+skellies:
+  name: skeletons
+  type: melee
+  arena: 2
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 81
+    damage: 81
+    hit_speed: 1.1
+    speed: fast
+    count: 3
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    properties:
+    - ground_troop
+    - melee:_short
+    - low_elixir_cycle_card
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - snowball_bait
+    - tornado_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/skeletons
+xbow:
+  name: x_bow
+  type: melee
+  arena: 10
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1600
+    damage: 43
+    hit_speed: 0.3
+    range: 11.5
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - building
+    - ranged_attacker_troop
+    - ground_tank_killer
+    - siege_tower
+    - zap_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - defensive_building
+  url: https://www.deckshop.pro/card/detail/x-bow
+gobs:
+  name: goblins
+  type: melee
+  arena: 1
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 202
+    damage: 120
+    hit_speed: 1.1
+    speed: very_fast
+    count: 4
+  meta_data:
+    roles:
+    - weak_when_underleveled
+    properties:
+    - swarm_troop
+    - ground_troop
+    - melee:_short
+    - ground_tank_killer
+    - low_elixir_cycle_card
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - snowball_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/goblins
+berserker:
+  name: berserker
+  type: melee
+  arena: 9
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 896
+    damage: 102
+    hit_speed: 0.6
+    speed: fast
+  meta_data:
+    roles:
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - ground_troop
+    - melee:_short
+    - low_elixir_cycle_card
+  url: https://www.deckshop.pro/card/detail/berserker
+gobgang:
+  name: goblin_gang
+  type: melee
+  arena: 9
+  level_multiplier: 1.1
+  base_stats: {}
+  meta_data:
+    roles:
+    - punishment_for_spending_elixir
+    - weak_when_underleveled
+    - threat_on_defense
+    properties:
+    - swarm_troop
+    - ground_troop
+    - melee:_short
+    - ranged_attacker_troop
+    - anti_air_troop
+    - ground_tank_killer
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/goblin-gang
+barbs:
+  name: barbarians
+  type: melee
+  arena: 3
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 670
+    damage: 192
+    hit_speed: 1.3
+    speed: medium
+    count: 5
+  meta_data:
+    roles:
+    - weak_when_underleveled
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - swarm_troop
+    - ground_troop
+    - melee:_short
+    - ground_tank_killer
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - rocket_bait
+    - snowball_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/barbarians
+elixirgolem:
+  name: elixir_golem
+  type: melee
+  arena: 14
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1569
+    damage: 253
+    hit_speed: 1.1
+    speed: slow
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    properties:
+    - big_tank
+    - swarm_troop
+    - ground_troop
+    - melee:_short
+    - building_chaser
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - tornado_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/elixir-golem
+skarmy:
+  name: skeleton_army
+  type: melee
+  arena: 6
+  level_multiplier: 1.1
+  base_stats:
+    count: 15
+  meta_data:
+    roles:
+    - level_independent
+    - strong_when_overleveled
+    - threat_on_defense
+    properties:
+    - swarm_troop
+    - ground_troop
+    - melee:_short
+    - ground_tank_killer
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/skeleton-army
+mp:
+  name: mini_p.e.k.k.a
+  type: melee
+  arena: 0
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1428
+    damage: 755
+    hit_speed: 1.6
+    speed: fast
+  meta_data:
+    roles:
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_troop
+    - melee:_short
+    - ground_tank_killer
+    - can_activate_king
+    - log_bait
+    - lightning_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/mini-pekka
+rascals:
+  name: rascals
+  type: melee
+  arena: 13
+  level_multiplier: 1.1
+  base_stats:
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_troop
+    - melee:_short
+    - ranged_attacker_troop
+    - anti_air_troop
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - rocket_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/rascals
+lumber:
+  name: lumberjack
+  type: melee
+  arena: 14
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1282
+    damage: 256
+    hit_speed: 0.8
+    speed: very_fast
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_troop
+    - melee:_short
+    - ground_tank_killer
+    - can_activate_king
+    - log_bait
+    - fireball_bait
+    - lightning_bait
+    - snowball_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/lumberjack
+giantskelly:
+  name: giant_skeleton
+  type: melee
+  arena: 8
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 3617
+    damage: 276
+    death_damage: 535
+    hit_speed: 1.4
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    properties:
+    - big_tank
+    - ground_troop
+    - melee:_short
+    - can_activate_king
+    - log_bait
+    - tornado_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/giant-skeleton
+bandit:
+  name: bandit
+  type: melee
+  arena: 13
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 906
+    damage: 194
+    hit_speed: 1
+    speed: fast
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    properties:
+    - mini_tank
+    - ground_troop
+    - melee:_short
+    - ground_tank_killer
+    - can_activate_king
+    - zap_bait
+    - log_bait
+    - fireball_bait
+    - lightning_bait
+    - tornado_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/bandit
+bossbandit:
+  name: boss_bandit
+  type: melee
+  arena: 17
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 2624
+    damage: 268
+    hit_speed: 1.2
+    speed: fast
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_troop
+    - melee:_short
+    - can_activate_king
+    - fireball_bait
+    - lightning_bait
+    - rocket_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/boss-bandit
+knight:
+  name: knight
+  type: melee
+  arena: 0
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1766
+    damage: 202
+    hit_speed: 1.2
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    properties:
+    - mini_tank
+    - ground_troop
+    - lightning_bait
+    - melee:_medium
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/knight
+bats:
+  name: bats
+  type: melee
+  arena: 5
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 81
+    damage: 81
+    hit_speed: 1.3
+    speed: very_fast
+    count: 5
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    properties:
+    - swarm_troop
+    - air_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - low_elixir_cycle_card
+    - zap_bait
+    - arrows_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - melee:_medium
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/bats
+darkprince:
+  name: dark_prince
+  type: melee
+  arena: 7
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1200
+    shield: 240
+    damage: 266
+    hit_speed: 1.3
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    properties:
+    - mini_tank
+    - ground_attacking_splash
+    - ground_troop
+    - charge_attack
+    - can_activate_king
+    - zap_bait
+    - log_bait
+    - lightning_bait
+    - tornado_bait
+    - melee:_medium
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/dark-prince
+valk:
+  name: valkyrie
+  type: melee
+  arena: 2
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1907
+    damage: 266
+    hit_speed: 1.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    properties:
+    - mini_tank
+    - ground_attacking_splash
+    - ground_troop
+    - can_activate_king
+    - lightning_bait
+    - rocket_bait
+    - melee:_medium
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/valkyrie
+ebarbs:
+  name: elite_barbarians
+  type: melee
+  arena: 10
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1341
+    damage: 384
+    hit_speed: 1.4
+    speed: fast
+    count: 2
+  meta_data:
+    roles:
+    - punishment_for_spending_elixir
+    - strong_when_overleveled
+    - threat_on_attack
+    properties:
+    - mini_tank
+    - ground_troop
+    - ground_tank_killer
+    - can_activate_king
+    - log_bait
+    - fireball_bait
+    - lightning_bait
+    - rocket_bait
+    - tornado_bait
+    - melee:_medium
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/elite-barbarians
+pekka:
+  name: p.e.k.k.a
+  type: melee
+  arena: 6
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 3760
+    damage: 816
+    hit_speed: 1.8
+    speed: slow
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - big_tank
+    - ground_troop
+    - ground_tank_killer
+    - melee:_medium
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/pekka
+runegiant:
+  name: rune_giant
+  type: melee
+  arena: 9
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 2662
+    damage: 120
+    hit_speed: 1.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - big_tank
+    - ground_troop
+    - building_chaser
+    - melee:_medium
+  url: https://www.deckshop.pro/card/detail/rune-giant
+gobgiant:
+  name: goblin_giant
+  type: melee
+  arena: 9
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 3020
+    damage: 176
+    hit_speed: 1.5
+    speed: medium
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    properties:
+    - big_tank
+    - ground_troop
+    - ranged_attacker_troop
+    - building_chaser
+    - anti_air_troop
+    - zap_bait
+    - melee:_medium
+  url: https://www.deckshop.pro/card/detail/goblin-giant
+electrogiant:
+  name: electro_giant
+  type: melee
+  arena: 13
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 3855
+    damage: 163
+    hit_speed: 2.1
+    speed: slow
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - big_tank
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - has_reset_attack
+    - building_chaser
+    - melee:_medium
+  url: https://www.deckshop.pro/card/detail/electro-giant
+miner:
+  name: miner
+  type: melee
+  arena: 11
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1210
+    damage: 194
+    tower_damage: 49
+    hit_speed: 1.3
+    speed: fast
+  meta_data:
+    roles:
+    - win_condition
+    - punishment_for_spending_elixir
+    - pump_response
+    - level_independent
+    - threat_on_attack
+    properties:
+    - mini_tank
+    - ground_troop
+    - can_activate_king
+    - snowball_bait
+    - tornado_bait
+    - melee:_medium
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/miner
+ghost:
+  name: royal_ghost
+  type: melee
+  arena: 12
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1210
+    damage: 261
+    hit_speed: 1.8
+    speed: fast
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    properties:
+    - mini_tank
+    - ground_attacking_splash
+    - ground_troop
+    - can_activate_king
+    - melee:_medium
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/royal-ghost
+fisherman:
+  name: fisherman
+  type: melee
+  arena: 15
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 870
+    damage: 194
+    hit_speed: 1.3
+    range: 7
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_troop
+    - ranged_attacker_troop
+    - zap_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - snowball_bait
+    - tornado_bait
+    - melee:_medium
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/fisherman
+spiritempress:
+  name: spirit_empress
+  type: melee
+  arena: 15
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1192
+    damage: 307
+    hit_speed: 1.4
+    range: 5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_troop
+    - air_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - melee:_medium
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/spirit-empress
+skeletonking:
+  name: skeleton_king
+  type: melee
+  arena: 16
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 2298
+    damage: 204
+    hit_speed: 1.6
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_attacking_splash
+    - ground_troop
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - tornado_bait
+    - melee:_medium
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/skeleton-king
+megaknight:
+  name: mega_knight
+  type: melee
+  arena: 11
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 3993
+    damage: 268
+    hit_speed: 1.7
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - big_tank
+    - ground_attacking_splash
+    - ground_troop
+    - knockback_effect
+    - melee:_medium
+  url: https://www.deckshop.pro/card/detail/mega-knight
+goblinmachine:
+  name: goblin_machine
+  type: melee
+  arena: 15
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 2150
+    damage: 212
+    hit_speed: 1.2
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - can_activate_king
+    - melee:_medium
+  url: https://www.deckshop.pro/card/detail/goblin-machine
+goldenknight:
+  name: golden_knight
+  type: melee
+  arena: 16
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1799
+    damage: 161
+    hit_speed: 0.9
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_troop
+    - charge_attack
+    - can_activate_king
+    - melee:_medium
+  url: https://www.deckshop.pro/card/detail/golden-knight
+horde:
+  name: minion_horde
+  type: melee
+  arena: 10
+  level_multiplier: 1.1
+  base_stats:
+    range: 2.5
+    count: 6
+  meta_data:
+    roles:
+    - weak_when_underleveled
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - swarm_troop
+    - air_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - zap_bait
+    - arrows_bait
+    - fireball_bait
+    - poison_bait
+    - rocket_bait
+    - snowball_bait
+    - tornado_bait
+    - melee:_long
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/minion-horde
+mm:
+  name: mega_minion
+  type: melee
+  arena: 3
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 837
+    damage: 312
+    hit_speed: 1.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    properties:
+    - air_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - snowball_bait
+    - melee:_long
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/mega-minion
+guards:
+  name: guards
+  type: melee
+  arena: 6
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 81
+    shield: 256
+    damage: 117
+    hit_speed: 1
+    speed: fast
+    count: 3
+  meta_data:
+    roles:
+    - level_independent
+    properties:
+    - ground_troop
+    - ground_tank_killer
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - melee:_long
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/guards
+monk:
+  name: monk
+  type: melee
+  arena: 18
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 2214
+    damage: 140
+    hit_speed: 0.8
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_troop
+    - knockback_effect
+    - can_activate_king
+    - lightning_bait
+    - melee:_medium
+  url: https://www.deckshop.pro/card/detail/monk
+phoenix:
+  name: phoenix
+  type: melee
+  arena: 12
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1052
+    damage: 217
+    death_damage: 163
+    hit_speed: 1
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - air_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - tornado_bait
+    - melee:_long
+  url: https://www.deckshop.pro/card/detail/phoenix
+nightwitch:
+  name: night_witch
+  type: melee
+  arena: 14
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 906
+    damage: 314
+    hit_speed: 1.3
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - ground_troop
+    - anti_air_troop
+    - ground_tank_killer
+    - zap_bait
+    - arrows_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - tornado_bait
+    - melee:_long
+    - barbarian_barrel_bait
+    - spawner_troop
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/night-witch
+goblinstein:
+  name: goblinstein
+  type: melee
+  arena: 18
+  level_multiplier: 1.1
+  base_stats:
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - big_tank
+    - ground_troop
+    - ranged_attacker_troop
+    - has_reset_attack
+    - building_chaser
+    - anti_air_troop
+    - lightning_bait
+    - melee:_medium
+  url: https://www.deckshop.pro/card/detail/goblinstein
+royalrecruits:
+  name: royal_recruits
+  type: melee
+  arena: 7
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 547
+    shield: 240
+    damage: 133
+    hit_speed: 1.3
+    speed: medium
+    count: 6
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - swarm_troop
+    - ground_troop
+    - ground_tank_killer
+    - arrows_bait
+    - log_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - melee:_long
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/royal-recruits
+minions:
+  name: minions
+  type: melee
+  arena: 0
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 230
+    damage: 107
+    hit_speed: 1.1
+    range: 2.5
+    speed: fast
+    count: 3
+  meta_data:
+    roles:
+    - weak_when_underleveled
+    properties:
+    - air_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - zap_bait
+    - arrows_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - melee:_long
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/minions
+speargobs:
+  name: spear_goblins
+  type: melee
+  arena: 1
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 133
+    damage: 81
+    hit_speed: 1.7
+    range: 5
+    speed: very_fast
+    count: 3
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    properties:
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - low_elixir_cycle_card
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/spear-goblins
+firecracker:
+  name: firecracker
+  type: melee
+  arena: 12
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 304
+    damage: 320
+    hit_speed: 3
+    range: 6
+    speed: fast
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - weak_when_underleveled
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - can_activate_king
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/firecracker
+bomber:
+  name: bomber
+  type: melee
+  arena: 2
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 304
+    damage: 225
+    hit_speed: 1.8
+    range: 4.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    properties:
+    - ground_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - low_elixir_cycle_card
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/bomber
+archers:
+  name: archers
+  type: melee
+  arena: 0
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 304
+    damage: 112
+    hit_speed: 0.9
+    range: 5
+    speed: medium
+    count: 2
+  meta_data:
+    roles:
+    - investment_of_elixir
+    properties:
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/archers
+dartgob:
+  name: dart_goblin
+  type: melee
+  arena: 9
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 261
+    damage: 156
+    hit_speed: 0.8
+    range: 6.5
+    speed: very_fast
+  meta_data:
+    roles:
+    - weak_when_underleveled
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - air_tank_killer
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/dart-goblin
+musk:
+  name: musketeer
+  type: melee
+  arena: 0
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 721
+    damage: 217
+    hit_speed: 1
+    range: 6
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - weak_when_underleveled
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/musketeer
+skeletondragons:
+  name: skeleton_dragons
+  type: melee
+  arena: 4
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 560
+    damage: 161
+    hit_speed: 1.9
+    range: 3.5
+    speed: fast
+    count: 2
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_defense
+    properties:
+    - air_attacking_splash
+    - ground_attacking_splash
+    - air_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - arrows_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - snowball_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/skeleton-dragons
+flyingmachine:
+  name: flying_machine
+  type: melee
+  arena: 5
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 614
+    damage: 171
+    hit_speed: 1.1
+    range: 6
+    speed: fast
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - air_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - zap_bait
+    - arrows_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/flying-machine
+zappies:
+  name: zappies
+  type: melee
+  arena: 10
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 529
+    damage: 117
+    hit_speed: 2.1
+    range: 4.5
+    speed: medium
+    count: 3
+  meta_data:
+    roles:
+    - investment_of_elixir
+    properties:
+    - ground_troop
+    - ranged_attacker_troop
+    - has_reset_attack
+    - anti_air_troop
+    - resets_charge_attack
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/zappies
+goblindemolisher:
+  name: goblin_demolisher
+  type: melee
+  arena: 12
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1300
+    damage: 186
+    death_damage: 404
+    hit_speed: 1.1
+    range: 5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - charge_attack
+    - log_bait
+    - tornado_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/goblin-demolisher
+furnace:
+  name: furnace
+  type: melee
+  arena: 10
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 896
+    damage: 135
+    hit_speed: 1.8
+    range: 6
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - weak_when_underleveled
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - spawner_troop
+  url: https://www.deckshop.pro/card/detail/furnace
+battlehealer:
+  name: battle_healer
+  type: melee
+  arena: 8
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1717
+    damage: 148
+    hit_speed: 1.5
+    speed: medium
+  meta_data:
+    roles:
+    - level_independent
+    - threat_on_attack
+    properties:
+    - mini_tank
+    - ground_troop
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - melee:_long
+    - heals
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/battle-healer
+prince:
+  name: prince
+  type: melee
+  arena: 7
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1920
+    damage: 391
+    hit_speed: 1.4
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_troop
+    - ground_tank_killer
+    - charge_attack
+    - zap_bait
+    - log_bait
+    - lightning_bait
+    - rocket_bait
+    - tornado_bait
+    - melee:_long
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/prince
+hunter:
+  name: hunter
+  type: melee
+  arena: 10
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 885
+    damage: 832
+    hit_speed: 2.2
+    range: 4
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_defense
+    properties:
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/hunter
+witch:
+  name: witch
+  type: melee
+  arena: 6
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 839
+    damage: 135
+    hit_speed: 1.1
+    range: 5.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - weak_when_underleveled
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - air_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - ground_tank_killer
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - spawner_troop
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/witch
+edragon:
+  name: electro_dragon
+  type: melee
+  arena: 12
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 949
+    damage: 192
+    hit_speed: 2.1
+    range: 3.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - air_attacking_splash
+    - ground_attacking_splash
+    - air_troop
+    - ranged_attacker_troop
+    - has_reset_attack
+    - anti_air_troop
+    - resets_charge_attack
+    - can_activate_king
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/electro-dragon
+bowler:
+  name: bowler
+  type: melee
+  arena: 13
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 2081
+    damage: 289
+    hit_speed: 2.5
+    range: 4
+    speed: slow
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - knockback_effect
+    - fireball_bait
+    - lightning_bait
+    - rocket_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/bowler
+mightyminer:
+  name: mighty_miner
+  type: melee
+  arena: 17
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 2250
+    damage: 40
+    hit_speed: 0.4
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_troop
+    - ground_tank_killer
+    - can_activate_king
+    - zap_bait
+    - fireball_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - tornado_bait
+    - melee:_long
+  url: https://www.deckshop.pro/card/detail/mighty-miner
+exe:
+  name: executioner
+  type: melee
+  arena: 14
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1280
+    damage: 168
+    hit_speed: 2.4
+    range: 4.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/executioner
+princess:
+  name: princess
+  type: melee
+  arena: 11
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 261
+    damage: 168
+    hit_speed: 3
+    range: 9
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - strong_when_overleveled
+    - weak_when_underleveled
+    - threat_on_defense
+    properties:
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/princess
+cannoncart:
+  name: cannon_cart
+  type: melee
+  arena: 15
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1809
+    damage: 212
+    hit_speed: 0.9
+    range: 5.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - mini_tank
+    - ground_troop
+    - ranged_attacker_troop
+    - ground_tank_killer
+    - zap_bait
+    - log_bait
+    - fireball_bait
+    - lightning_bait
+    - rocket_bait
+    - tornado_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/cannon-cart
+ewiz:
+  name: electro_wizard
+  type: melee
+  arena: 11
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 714
+    damage: 235
+    hit_speed: 1.8
+    range: 5
+    speed: fast
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - weak_when_underleveled
+    - threat_on_defense
+    properties:
+    - ground_troop
+    - ranged_attacker_troop
+    - has_reset_attack
+    - anti_air_troop
+    - resets_charge_attack
+    - can_activate_king
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/electro-wizard
+infernod:
+  name: inferno_dragon
+  type: melee
+  arena: 11
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1295
+    damage: 35
+    hit_speed: 0.4
+    range: 3.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - air_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - zap_bait
+    - fireball_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - tornado_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/inferno-dragon
+magicarcher:
+  name: magic_archer
+  type: melee
+  arena: 13
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 529
+    damage: 143
+    hit_speed: 1.1
+    range: 7
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - can_activate_king
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/magic-archer
+ramrider:
+  name: ram_rider
+  type: melee
+  arena: 11
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1697
+    damage: 250
+    hit_speed: 1.8
+    range: 5.5
+    speed: medium
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    properties:
+    - mini_tank
+    - ground_troop
+    - ranged_attacker_troop
+    - building_chaser
+    - anti_air_troop
+    - charge_attack
+    - can_activate_king
+    - zap_bait
+    - log_bait
+    - fireball_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - tornado_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/ram-rider
+sparky:
+  name: sparky
+  type: melee
+  arena: 11
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1451
+    damage: 1331
+    hit_speed: 4
+    range: 5
+    speed: slow
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - ground_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - ground_tank_killer
+    - zap_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - tornado_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/sparky
+littleprince:
+  name: little_prince
+  type: melee
+  arena: 18
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 698
+    damage: 102
+    hit_speed: 1.2
+    range: 5.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - ground_troop
+    - ranged_attacker_troop
+    - knockback_effect
+    - anti_air_troop
+    - air_tank_killer
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/little-prince
+archerqueen:
+  name: archer_queen
+  type: melee
+  arena: 17
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1000
+    damage: 225
+    hit_speed: 1.2
+    range: 5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - lightning_bait
+    - rocket_bait
+  url: https://www.deckshop.pro/card/detail/archer-queen
+skellybarrel:
+  name: skeleton_barrel
+  type: melee
+  arena: 9
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 532
+    death_damage: 145
+    speed: fast
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    properties:
+    - swarm_troop
+    - air_troop
+    - building_chaser
+    - can_activate_king
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/skeleton-barrel
+balloon:
+  name: balloon
+  type: melee
+  arena: 7
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1679
+    damage: 640
+    death_damage: 240
+    hit_speed: 2
+    speed: medium
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    properties:
+    - air_troop
+    - building_chaser
+    - can_activate_king
+    - zap_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - tornado_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/balloon
+lava:
+  name: lava_hound
+  type: melee
+  arena: 13
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 3581
+    damage: 53
+    hit_speed: 1.3
+    range: 3.5
+    speed: slow
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - weak_when_underleveled
+    - threat_on_attack
+    properties:
+    - big_tank
+    - swarm_troop
+    - air_troop
+    - building_chaser
+    - zap_bait
+    - arrows_bait
+    - fireball_bait
+    - poison_bait
+    - snowball_bait
+    - tornado_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/lava-hound
+icewiz:
+  name: ice_wizard
+  type: melee
+  arena: 12
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 688
+    damage: 89
+    hit_speed: 1.7
+    range: 5.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - weak_when_underleveled
+    - threat_on_defense
+    properties:
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/ice-wizard
+firespirit:
+  name: fire_spirit
+  type: melee
+  arena: 4
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 230
+    damage: 207
+    range: 2.5
+    speed: very_fast
+  meta_data:
+    roles:
+    - level_independent
+    - weak_when_underleveled
+    properties:
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - anti_air_troop
+    - low_elixir_cycle_card
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - snowball_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/fire-spirit
+icespirit:
+  name: ice_spirit
+  type: melee
+  arena: 8
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 230
+    damage: 110
+    range: 2.5
+    speed: very_fast
+    duration: 1.1
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - weak_when_underleveled
+    properties:
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - has_reset_attack
+    - low_elixir_cycle_card
+    - resets_charge_attack
+    - arrows_bait
+    - log_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/ice-spirit
+motherwitch:
+  name: mother_witch
+  type: melee
+  arena: 15
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 529
+    damage: 133
+    hit_speed: 1
+    range: 5.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/mother-witch
+rg:
+  name: royal_giant
+  type: melee
+  arena: 7
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 3164
+    damage: 307
+    hit_speed: 1.7
+    range: 5
+    speed: slow
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - strong_when_overleveled
+    - threat_on_attack
+    properties:
+    - big_tank
+    - ground_troop
+    - building_chaser
+    - zap_bait
+    - log_bait
+    - tornado_bait
+  url: https://www.deckshop.pro/card/detail/royal-giant
+healspirit:
+  name: heal_spirit
+  type: melee
+  arena: 13
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 230
+    damage: 110
+    range: 2.5
+    speed: very_fast
+  meta_data:
+    roles:
+    - level_independent
+    - weak_when_underleveled
+    properties:
+    - ground_troop
+    - low_elixir_cycle_card
+    - arrows_bait
+    - log_bait
+    - barbarian_barrel_bait
+    - heals
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/heal-spirit
+icegolem:
+  name: ice_golem
+  type: melee
+  arena: 8
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1318
+    damage: 84
+    hit_speed: 2.5
+    speed: slow
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - weak_when_underleveled
+    properties:
+    - mini_tank
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - building_chaser
+    - anti_air_troop
+    - low_elixir_cycle_card
+    - lightning_bait
+  url: https://www.deckshop.pro/card/detail/ice-golem
+suspiciousbush:
+  name: suspicious_bush
+  type: melee
+  arena: 13
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 81
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    properties:
+    - ground_troop
+    - building_chaser
+    - low_elixir_cycle_card
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+  url: https://www.deckshop.pro/card/detail/suspicious-bush
+ram:
+  name: battle_ram
+  type: melee
+  arena: 3
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 967
+    damage: 286
+    speed: medium
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    properties:
+    - mini_tank
+    - ground_troop
+    - building_chaser
+    - charge_attack
+    - zap_bait
+    - log_bait
+    - fireball_bait
+    - lightning_bait
+    - snowball_bait
+    - tornado_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/battle-ram
+hog:
+  name: hog_rider
+  type: melee
+  arena: 5
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1697
+    damage: 317
+    hit_speed: 1.6
+    speed: very_fast
+  meta_data:
+    roles:
+    - win_condition
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    properties:
+    - mini_tank
+    - ground_troop
+    - building_chaser
+    - can_activate_king
+    - log_bait
+    - fireball_bait
+    - rocket_bait
+    - snowball_bait
+    - tornado_bait
+    - earthquake_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/hog-rider
+giant:
+  name: giant
+  type: melee
+  arena: 0
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 4090
+    damage: 253
+    hit_speed: 1.5
+    speed: slow
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - punishment_for_spending_elixir
+    - level_independent
+    - threat_on_attack
+    properties:
+    - big_tank
+    - ground_troop
+    - building_chaser
+    - tornado_bait
+  url: https://www.deckshop.pro/card/detail/giant
+royalhogs:
+  name: royal_hogs
+  type: melee
+  arena: 7
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 837
+    damage: 74
+    hit_speed: 1.2
+    speed: very_fast
+    count: 4
+  meta_data:
+    roles:
+    - win_condition
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    properties:
+    - swarm_troop
+    - ground_troop
+    - building_chaser
+    - can_activate_king
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - rocket_bait
+    - snowball_bait
+    - tornado_bait
+    - earthquake_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/royal-hogs
+golem:
+  name: golem
+  type: melee
+  arena: 10
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 5120
+    damage: 312
+    death_damage: 225
+    hit_speed: 2.5
+    speed: slow
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - level_independent
+    - threat_on_attack
+    properties:
+    - big_tank
+    - ground_troop
+    - building_chaser
+    - can_activate_king
+  url: https://www.deckshop.pro/card/detail/golem
+wiz:
+  name: wizard
+  type: melee
+  arena: 4
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 755
+    damage: 281
+    hit_speed: 1.4
+    range: 5.5
+    speed: medium
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - weak_when_underleveled
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/wizard
+3m:
+  name: three_musketeers
+  type: melee
+  arena: 7
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 883
+    damage: 204
+    hit_speed: 1.2
+    range: 6
+    speed: medium
+    count: 3
+  meta_data:
+    roles:
+    - win_condition
+    - investment_of_elixir
+    - weak_when_underleveled
+    - threat_on_attack
+    - threat_on_defense
+    properties:
+    - ground_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - air_tank_killer
+    - ground_tank_killer
+    - zap_bait
+    - log_bait
+    - fireball_bait
+    - poison_bait
+    - lightning_bait
+    - rocket_bait
+    - snowball_bait
+    - tornado_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/three-musketeers
+wallbreakers:
+  name: wall_breakers
+  type: melee
+  arena: 12
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 330
+    damage: 391
+    speed: very_fast
+    count: 2
+  meta_data:
+    roles:
+    - win_condition
+    - punishment_for_spending_elixir
+    - threat_on_attack
+    properties:
+    - ground_troop
+    - building_chaser
+    - can_activate_king
+    - zap_bait
+    - arrows_bait
+    - log_bait
+    - fireball_bait
+    - snowball_bait
+    - tornado_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/wall-breakers
+electrospirit:
+  name: electro_spirit
+  type: melee
+  arena: 4
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 230
+    damage: 99
+    range: 2.5
+    speed: very_fast
+  meta_data:
+    roles:
+    - level_independent
+    - weak_when_underleveled
+    - threat_on_defense
+    properties:
+    - air_attacking_splash
+    - ground_attacking_splash
+    - ground_troop
+    - has_reset_attack
+    - low_elixir_cycle_card
+    - resets_charge_attack
+    - can_activate_king
+    - arrows_bait
+    - log_bait
+    - barbarian_barrel_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/electro-spirit
+babyd:
+  name: baby_dragon
+  type: melee
+  arena: 6
+  level_multiplier: 1.1
+  base_stats:
+    hitpoints: 1152
+    damage: 161
+    hit_speed: 1.5
+    range: 3.5
+    speed: fast
+  meta_data:
+    roles:
+    - investment_of_elixir
+    - level_independent
+    properties:
+    - mini_tank
+    - air_attacking_splash
+    - ground_attacking_splash
+    - air_troop
+    - ranged_attacker_troop
+    - anti_air_troop
+    - fireball_bait
+    - lightning_bait
+    - snowball_bait
+    - royal_delivery_bait
+  url: https://www.deckshop.pro/card/detail/baby-dragon
